@@ -4,9 +4,7 @@
 import PackageDescription
 import Foundation
 
-let osEnvRocks: String
-
-osEnvRocks = "IOS"
+let osEnvRocks = "IOS"
 
 func shell(_ commands: String...) -> String {
     let task = Process()
