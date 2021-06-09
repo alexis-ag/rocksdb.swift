@@ -20,11 +20,10 @@ func shell(_ commands: String...) -> String {
 
     return output
 }
- let rocksDBHash = shell("git --git-dir=./Sources/librocksdb/upstream/.git rev-parse HEAD")
-     .trimmingCharacters(in: .whitespacesAndNewlines)
- let rocksDBCommitDate = String(
-     shell("git --git-dir=./Sources/librocksdb/upstream/.git show --format='%ci' \(rocksDBHash)"
- ).split(separator: "\n")[0]).trimmingCharacters(in: .whitespacesAndNewlines)
+
+ let rocksDBHash = "2f93a3b80912b337c2d97c31292168ae6be2b949"
+ let rocksDBCommitDate = String("2021-06-08 05:03:32 -0700")
+    .trimmingCharacters(in: .whitespacesAndNewlines)
 
 
 let package = Package(
