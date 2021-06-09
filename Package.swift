@@ -7,6 +7,8 @@ import Foundation
 let osEnvRocks: String
 #if os(Linux)
 osEnvRocks = "OS_LINUX"
+#if os(iOS)
+osEnvRocks = "IOS"
 #else
 osEnvRocks = "OS_MACOSX"
 #endif
